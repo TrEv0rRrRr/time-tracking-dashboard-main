@@ -7,7 +7,7 @@ let jsonData = [];
 
 async function fetchData() {
   try {
-    const response = await fetch("../data.json");
+    const response = await fetch("./data.json");
     if (!response.ok) throw new Error("No se pudo cargar el archivo JSON");
     jsonData = await response.json();
     renderData("daily");
