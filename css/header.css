@@ -1,0 +1,75 @@
+.container__header {
+  background-color: var(--Dark-blue);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.header__div {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.header__div-profile {
+  background-color: var(--Blue);
+  padding: 40px 35px;
+  padding-bottom: 80px;
+}
+
+.header__div-profile-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.div-profile-cont__img {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  max-width: 90px;
+  max-height: 90px;
+}
+
+.div-texts__p {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 55px;
+}
+
+.p__text {
+  font-weight: var(--fw-regular);
+  color: var(--Pale-Blue);
+  font-size: 1rem;
+}
+
+.p__name {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__div-buttons {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 35px;
+  gap: 30px;
+}
+
+.div-buttons_button {
+  cursor: pointer;
+  max-width: 30%;
+  text-align: start;
+  background: transparent;
+  border: transparent;
+  color: var(--Desaturated-blue);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.div-buttons_button:hover,
+.div-buttons_button:focus {
+  color: #fff;
+}
