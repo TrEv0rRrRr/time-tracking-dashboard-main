@@ -43,6 +43,7 @@ body {
   font-weight: var(--fw-light);
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .container {
@@ -52,4 +53,24 @@ body {
   max-height: 35rem;
   flex-direction: row;
   gap: 30px;
+}
+
+@media screen and (max-width: 1062px) {
+  .container {
+    flex-direction: column;
+    min-width: 22rem;
+    max-width: 27rem;
+    max-height: 100%;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    flex-direction: column;
+    min-width: 22rem;
+    max-width: 22rem;
+    max-height: 100%;
+    margin: 20px 0;
+  }
 }

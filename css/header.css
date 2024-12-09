@@ -3,11 +3,12 @@
   display: flex;
   flex-direction: column;
   border-radius: 15px;
+  max-width: 100%;
+  flex-grow: 1;
 }
 
 .header__div {
   border-radius: 15px;
-  width: 100%;
 }
 
 .header__div-profile {
@@ -76,4 +77,49 @@
 
 .div-inputs_input__radio {
   display: none;
+}
+
+@media screen and (max-width: 1062px) {
+  .header__div-inputs {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__div-profile-cont {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header__div-profile {
+    padding: 35px;
+  }
+
+  .p__name {
+    flex-direction: row;
+    font-size: 2rem;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header__div-inputs {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__div-profile-cont {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header__div-profile {
+    padding: 30px;
+  }
+
+  .p__name {
+    flex-direction: row;
+    font-size: 1.5rem;
+    gap: 8px;
+  }
 }
