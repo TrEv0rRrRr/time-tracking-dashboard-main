@@ -13,19 +13,29 @@
 }
 
 .main-topimg {
-  display: flex;
-  align-items: center;
+  min-height: 8.3125rem;
+  border-radius: var(--corner-radius);
+  margin-bottom: -5.8rem;
   position: relative;
-  justify-content: end;
-  height: 100%;
+  overflow: hidden;
 }
 
 .main-topimg__img {
-  min-width: 80px;
-  margin-right: 20px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+figure {
+  min-width: 4.9375rem;
+  min-height: 4.9375rem;
   position: absolute;
-  z-index: 1;
-  top: 0;
+  right: 1rem;
+  top: -0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .main__stats {

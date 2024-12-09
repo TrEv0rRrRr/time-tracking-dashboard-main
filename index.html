@@ -28,15 +28,171 @@
 
       </div>
 
-      <div class="header__div header__div-buttons">
-        <button class="div-buttons__btnDaily div-buttons_button">Daily</button>
-        <button class="div-buttons__btnWeekly div-buttons_button">Weekly</button>
-        <button class="div-buttons__btnMonthly div-buttons_button">Monthly</button>
+      <div class="header__div header__div-inputs">
+        <div class="div-inputs__inpDaily div-inputs_input">
+          <input class="div-inputs_input__radio" type="radio" name="timeframe" id="daily" checked>
+          <label class="div-inputs_input__label" for="daily">Daily</label>
+        </div>
+
+        <div class="div-inputs__inpWeekly div-inputs_input">
+          <input class="div-inputs_input__radio" type="radio" name="timeframe" id="weekly">
+          <label class="div-inputs_input__label" for="weekly">Weekly</label>
+        </div>
+
+        <div class="div-inputs__inpMonthly div-inputs_input">
+          <input class="div-inputs_input__radio" type="radio" name="timeframe" id="monthly">
+          <label class="div-inputs_input__label" for="monthly">Monthly</label>
+        </div>
+
       </div>
 
     </header>
 
-    <main class="container__main"></main>
+    <main class="container__main">
+      <div class="container__main-work container__main-data" style="background-color: var(--Bg-color-work)">
+
+        <div class="main-work__topimg main-topimg">
+          <figure>
+            <img class="main-topimg__img" src="./images/icon-work.svg" alt="">
+          </figure>
+        </div>
+
+        <div class="main-work__stats main__stats">
+
+          <div class="stats__title">
+            <p class="stats__title-title"></p>
+            <img class="stats__title-ellipsis" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+
+          <div class="stats__stats">
+            <p class="stats__hours"></p>
+            <p class="stats__previous"></p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container__main-play container__main-data" style="background-color: var(--Bg-color-play)">
+
+        <div class="main-play__topimg main-topimg">
+          <figure>
+            <img class="main-topimg__img" src="./images/icon-play.svg" alt="">
+          </figure>
+        </div>
+
+        <div class="main-play__stats main__stats">
+
+          <div class="stats__title">
+            <p class="stats__title-title"></p>
+            <img class="stats__title-ellipsis" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+
+          <div class="stats__stats">
+            <p class="stats__hours"></p>
+            <p class="stats__previous"></p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container__main-study container__main-data" style="background-color: var(--Bg-color-study)">
+
+        <div class="main-study__topimg main-topimg">
+          <figure>
+            <img class="main-topimg__img" src="./images/icon-study.svg" alt="">
+          </figure>
+        </div>
+
+        <div class="main-study__stats main__stats">
+
+          <div class="stats__title">
+            <p class="stats__title-title"></p>
+            <img class="stats__title-ellipsis" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+
+          <div class="stats__stats">
+            <p class="stats__hours"></p>
+            <p class="stats__previous"></p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container__main-exercise container__main-data" style="background-color: var(--Bg-color-exercise)">
+
+        <div class="main-exercise__topimg main-topimg">
+          <figure>
+            <img class="main-topimg__img" src="./images/icon-exercise.svg" alt="">
+          </figure>
+        </div>
+
+        <div class="main-exercise__stats main__stats">
+
+          <div class="stats__title">
+            <p class="stats__title-title"></p>
+            <img class="stats__title-ellipsis" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+
+          <div class="stats__stats">
+            <p class="stats__hours"></p>
+            <p class="stats__previous"></p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container__main-social container__main-data" style="background-color: var(--Bg-color-social)">
+
+        <div class="main-social__topimg main-topimg">
+          <figure>
+            <img class="main-topimg__img" src="./images/icon-social.svg" alt="">
+          </figure>
+        </div>
+
+        <div class="main-social__stats main__stats">
+
+          <div class="stats__title">
+            <p class="stats__title-title"></p>
+            <img class="stats__title-ellipsis" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+
+          <div class="stats__stats">
+            <p class="stats__hours"></p>
+            <p class="stats__previous"></p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container__main-self-care container__main-data" style="background-color: var(--Bg-color-self-care)">
+
+        <div class="main-self-care__topimg main-topimg">
+          <figure>
+            <img class="main-topimg__img" src="./images/icon-self-care.svg" alt="">
+          </figure>
+        </div>
+
+        <div class="main-self-care__stats main__stats">
+
+          <div class="stats__title">
+            <p class="stats__title-title"></p>
+            <img class="stats__title-ellipsis" src="./images/icon-ellipsis.svg" alt="">
+          </div>
+
+          <div class="stats__stats">
+            <p class="stats__hours"></p>
+            <p class="stats__previous"></p>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
 
   </div>
   <script src="./js/index.js"></script>

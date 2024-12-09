@@ -49,27 +49,31 @@
   flex-direction: column;
 }
 
-.header__div-buttons {
+.header__div-inputs {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 30px 35px;
-  gap: 30px;
+  gap: 15px;
 }
 
-.div-buttons_button {
+.div-inputs_input__label {
   cursor: pointer;
-  max-width: 30%;
-  text-align: start;
-  background: transparent;
-  border: transparent;
   color: var(--Desaturated-blue);
-  font-size: 1rem;
+  font-size: 1.15rem;
   transition: color 0.3s ease;
 }
 
-.div-buttons_button:hover,
-.div-buttons_button:focus {
+.div-inputs_input__radio:checked + .div-inputs_input__label,
+.div-inputs_input__label:hover {
   color: #fff;
+}
+
+.div-inputs_input__radio:checked + .div-inputs_input__label {
+  font-weight: var(--fw-regular);
+}
+
+.div-inputs_input__radio {
+  display: none;
 }
